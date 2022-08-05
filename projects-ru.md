@@ -1,31 +1,29 @@
 <!-- TOC start -->
 - Учебные проекты
   * Разработка
-    + [Дипломная работа на курсе CS50](#-cs50)
+    + [Дипломная работа на курсе CS50](#cs50)
   * Автоматизированное тестирование
-    + [Дипломная работа на курсе "Тестировщик ПО"](#1-)
-    + [SQL](#2-sql)
-    + [Page Objects, Behaviour Driven Development ](#3-page-objects-behaviour-driven-development)
+    + [Дипломная работа на курсе "Тестировщик ПО"](#qa-diploma)
+    + [SQL](#sql)
+    + [Page Objects, Behaviour Driven Development ](#po-bdd)
   * Инструментарий для автоматизированного тестирования
-    + [Docker, Docker Compose ](#1-docker-docker-compose)
+    + [Docker, Docker Compose ](#docker)
   * Артефакты тестирования
-    + [Составление плана автоматизации](#1--1)
+    + [Составление плана автоматизации](#test-plan)
 <!-- TOC end -->
 
 
-<!-- TOC --><a name="-"></a>
+
 # Учебные проекты
 
-<!-- TOC --><a name=""></a>
 ## Разработка
 
-<!-- TOC --><a name="-cs50"></a>
+<!-- TOC --><a name="cs50"></a>
 ### Дипломная работа на курсе CS50
-<!-- TOC --><a name="--1"></a>
+
 #### Краткое описание задачи
 Разработать приложение для Android, помогающее кофейням (или любым другим заведениям, где применимы такие бонусные рпограммы) отслеживать, какой клиент сколько напитков заказал, чтобы предлагать им бесплатные напитки после покупки определенного количества напитков.
 
-<!-- TOC --><a name="--2"></a>
 #### Краткое описание решения
 Приложение на Java, хранящее данные о клиентах в БД Room. Доступно на русском и английском языках.
 
@@ -38,152 +36,99 @@
 
 [Полный список фич приложения](https://github.com/schastev/cupCounter/blob/master/features%20(ru).md)
 
-<details>
- <summary>Использованный стек</summary>
- 
-* JUnit
-* Gradle
-* JavaFaker
- </details>
+#### Использованный стек
+JUnit, Gradle, Room, JavaFaker, Espresso, Mockito, Allure
 
-<!-- TOC --><a name="-httpsgithubcomschastevcupcounter"></a>
 #### [Репозиторий с кодом приложения](https://github.com/schastev/cupCounter)
 
-<!-- TOC --><a name="--4"></a>
+
 ## Автоматизированное тестирование
 
-<!-- TOC --><a name="1-"></a>
-### 1. Дипломная работа на курсе "Тестировщик ПО"
-<!-- TOC --><a name="--5"></a>
+<!-- TOC --><a name="qa-diploma"></a>
+### Дипломная работа на курсе "Тестировщик ПО"
+
 #### Краткое описание задачи
 Автоматизированное тестирование комплексного сервиса, взаимодействующего с СУБД и API Банка: страницы покупки (по дебетовой или кредитной карте) тура по данным карты.
 
-<!-- TOC --><a name="-httpsgithubcomnetology-codeqa-diploma"></a>
 #### [Полное описание задачи](https://github.com/netology-code/qa-diploma)
 
-<!-- TOC --><a name="--6"></a>
 #### Краткое описание решения
 Составлен план автоматизированного тестирования, включающий перечни автоматизируемых сценариев, необходимых инструментов, возможных рисков, оценки трудо- и времязатрат.
 Проведены проверки правильности фиксации данных об оставленных заявках в базе данных. Протестирована устойчивость фронтенда приложения к вводу невалидных данных в форму.
 Все компоненты тестируемой системы (приложение, БД и заглушка) разворачиваются в контейнерах Docker во время тестирования при помощи testcontainers. Тесты, предполагающие проверку взаимодействия приложения с БД, реализованы как шаблоны тестов, работающие с двумя разными БД (MySQL и PostgreSQL).
 По результатам тестирования и автоматизации подготовлены отчеты с общими рекомендациями и анализом проделанной работы.
 
-<details>
- <summary>Использованный стек</summary>
- 
-* JUnit
-* Gradle
-* Lombok
-* Selenide
-* JavaFaker
-* DBUtils
-* Testcontainers
-* Allure
-</details>
+#### Использованный стек
+JUnit, Gradle, Lombok, Selenide, JavaFaker, DBUtils, Testcontainers, Allure
 
-
-<!-- TOC --><a name="-httpsgithubcomschastevaqa-diploma"></a>
 #### [Репозиторий с решением](https://github.com/schastev/aqa-diploma)
 
-<!-- TOC --><a name="2-sql"></a>
-### 2. SQL
-<!-- TOC --><a name="--8"></a>
+<!-- TOC --><a name="sql"></a>
+### SQL
+
 #### Краткое описание задачи
 Настройка, запуск и тестирование приложения с БД (с подгрузкой схемы при запуске) в контейнере Docker/Docker-compose.
 Тестирование фронтендовой части входа в личный кабинет пользователя с кодом авторизации. 
 Тестирование входа, введения кода авторизации и переводов с карты на карту при помощи REST-Assured.
 
-<!-- TOC --><a name="-httpsgithubcomnetology-codeaqa-homeworkstreemastersql"></a>
 #### [Полное описание задачи](https://github.com/netology-code/aqa-homeworks/tree/master/sql)
 
-<!-- TOC --><a name="--9"></a>
 #### Краткое описание решения
 Проведено позитивное и негативное тестирование разнообразных сценариев входа в систему и перевода с одной карты на другую.
 Тестирование фронтенда реализовано при помощи Page Objects. При тестировании API были применены параметризованные тесты.
 Подключена система CI (Appveyor).
 
-<details>
- <summary>Использованный стек</summary>
- 
-* JUnit
-* Gradle
-* Lombok
-* Selenide
-* REST-assured
-* Gson
-* JavaFaker
-* DBUtils
-* Testcontainers
-</details>
+#### Использованный стек
+JUnit, Gradle, Lombok, Selenide, REST-assured, Gson, JavaFaker, DBUtils, Testcontainers
 
-
-<!-- TOC --><a name="-1-httpsgithubcomschastevaqa3-2-ex1-2-httpsgithubcomschastevaqa3-2-ex2"></a>
 #### Репозитории с решением: [тестирование входа](https://github.com/schastev/aqa3-2-ex1-sql), [тестирование входа и переводов](https://github.com/schastev/aqa3-2-ex2-sql)
 
-<!-- TOC --><a name="3-page-objects-behaviour-driven-development"></a>
-### 3. Page Objects, Behaviour Driven Development 
-<!-- TOC --><a name="--11"></a>
+<!-- TOC --><a name="po-bdd"></a>
+### Page Objects, Behaviour Driven Development 
+
 #### Краткое описание задачи
 Тестирование перевода с карты на карту при помощи Page Objects и [Akita](https://github.com/alfa-laboratory/akita).
 
-<!-- TOC --><a name="-httpsgithubcomnetology-codeaqa-homeworkstreemasterbdd"></a>
 #### [Полное описание задачи](https://github.com/netology-code/aqa-homeworks/tree/master/bdd)
 
-<!-- TOC --><a name="--12"></a>
 #### Краткое описание решения
 Подготовлены Page Objects для всех страниц тестируемого приложения, проведено негативное и позитивное тестирование функции перевода с карты на карту.
 Реализованы кастомные шаги для заданного тест-кейса при помощи Akita.
 Подключена система CI (Appveyor).
 
-<details>
- <summary>Использованный стек</summary>
- 
-* JUnit
-* Gradle
-* Lombok
-* Selenide
-* Akita
- </details>
+#### Использованный стек
+JUnit, Gradle, Lombok, Selenide, Akita
 
-<!-- TOC --><a name="-1-page-objectshttpsgithubcomschastevaqa2-4-ex1-2-akitahttpsgithubcomschastevaqa2-4-ex2"></a>
 #### Репозитории с решением: [Page Objects](https://github.com/schastev/aqa2-4-ex1), [Akita](https://github.com/schastev/aqa2-4-ex2-bdd)
 
 
-<!-- TOC --><a name="--23"></a>
 ## Инструментарий для автоматизированного тестирования
 
-<!-- TOC --><a name="1-docker-docker-compose"></a>
-### 1. Docker, Docker Compose 
-<!-- TOC --><a name="--24"></a>
+<!-- TOC --><a name="docker"></a>
+### Docker, Docker Compose 
+
 #### Краткое описание задачи
 Настройка контейнера с БД посредством `docker-compose.yml`; создание своего образа на базе openjdk с конфигурацией в `Dockerfile` и `docker-compose.yml`.
 
-<!-- TOC --><a name="-httpsgithubcomnetology-codeaqa-homeworkstreemasterdocker"></a>
 #### [Полное описание задачи](https://github.com/netology-code/aqa-homeworks/tree/master/docker)
 
-<!-- TOC --><a name="--25"></a>
 #### Краткое описание решения
 Произведена настройка запуска БД в контейнере таким образом, чтобы тестируемое приложение могло с ней взаимодействовать. Образ приложения сконфигурирован в `Dockerfile` и собирается через `docker-compose.yml`. 
 
-<!-- TOC --><a name="-1-docker-composehttpsgithubcomschastevaqa-3-1-ex1-2-httpsgithubcomschastevaqa-3-1-ex2"></a>
 #### Репозитории с решением: [docker-compose](https://github.com/schastev/aqa-3-1-ex1), [контейнеризация приложени](https://github.com/schastev/aqa-3-1-ex2)
 
 
-<!-- TOC --><a name="--29"></a>
 ## Артефакты тестирования
 
-<!-- TOC --><a name="1--1"></a>
-### 1. Составление плана автоматизации
-<!-- TOC --><a name="--30"></a>
+<!-- TOC --><a name="test-plan"></a>
+### Составление плана автоматизации
+
 #### Краткое описание задачи
 Составить план тестирования записи на курс обучения.
 
-<!-- TOC --><a name="-httpsgithubcomnetology-codeaqa-homeworkstreemastersummary"></a>
 #### [Полное описание задачи](https://github.com/netology-code/aqa-homeworks/tree/master/summary)
 
-<!-- TOC --><a name="--31"></a>
 #### Краткое описание решения
 Составлен план автоматизированного тестирования, включающий перечни автоматизируемых сценариев, необходимых инструментов, разрешений/данных/допусков, возможных рисков, оценки трудо- и времязатрат.
 
-<!-- TOC --><a name="-httpsgithubcomschastevaqa4-2"></a>
 #### [Репозиторий с решением](https://github.com/schastev/aqa4-2-test-plan)
