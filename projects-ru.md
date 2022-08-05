@@ -3,17 +3,13 @@
   * Разработка
     + [Дипломная работа на курсе CS50](#-cs50)
   * Автоматизированное тестирование
-    + [1. Дипломная работа на курсе "Тестировщик ПО"](#1-)
-    + [2. SQL](#2-sql)
-    + [3. Page Objects, Behaviour Driven Development ](#3-page-objects-behaviour-driven-development)
-    + [4. Patterns](#4-patterns)
-    + [5. Selenide](#5-selenide)
-    + [6. Тестирование веб-интерфейсов, Selenium и Selenide](#6-selenium-selenide)
+    + [Дипломная работа на курсе "Тестировщик ПО"](#1-)
+    + [SQL](#2-sql)
+    + [Page Objects, Behaviour Driven Development ](#3-page-objects-behaviour-driven-development)
   * Инструментарий для автоматизированного тестирования
-    + [1. Docker, Docker Compose ](#1-docker-docker-compose)
-    + [2. Репортинг: Report Portal](#2-report-portal)
+    + [Docker, Docker Compose ](#1-docker-docker-compose)
   * Артефакты тестирования
-    + [1. Составление плана автоматизации](#1--1)
+    + [Составление плана автоматизации](#1--1)
 <!-- TOC end -->
 <!-- TOC --><a name="-"></a>
 # Учебные проекты
@@ -112,7 +108,7 @@
 * Testcontainers
 
 <!-- TOC --><a name="-1-httpsgithubcomschastevaqa3-2-ex1-2-httpsgithubcomschastevaqa3-2-ex2"></a>
-#### Репозитории с решением: [1 (тестирование входа)](https://github.com/schastev/aqa3-2-ex1), [2 (тестирование входа и переводов)](https://github.com/schastev/aqa3-2-ex2)
+#### Репозитории с решением: [1 (тестирование входа)](https://github.com/schastev/aqa3-2-ex1-sql), [2 (тестирование входа и переводов)](https://github.com/schastev/aqa3-2-ex2-sql)
 
 <!-- TOC --><a name="3-page-objects-behaviour-driven-development"></a>
 ### 3. Page Objects, Behaviour Driven Development 
@@ -138,79 +134,7 @@
 * Akita
 
 <!-- TOC --><a name="-1-page-objectshttpsgithubcomschastevaqa2-4-ex1-2-akitahttpsgithubcomschastevaqa2-4-ex2"></a>
-#### Репозитории с решением: [1 (Page Objects)](https://github.com/schastev/aqa2-4-ex1), [2 (Akita)](https://github.com/schastev/aqa2-4-ex2)
-
-<!-- TOC --><a name="4-patterns"></a>
-### 4. Patterns
-<!-- TOC --><a name="--14"></a>
-#### Краткое описание задачи
-Автоматизация тестирования функции переназначения встречи с представителем банка.
-Тестирование функции создания пользователя через API и входа в личный кабинет через web-интерфейс.
-
-<!-- TOC --><a name="-httpsgithubcomnetology-codeaqa-homeworkstreemasterpatterns"></a>
-#### [Полное описание задачи](https://github.com/netology-code/aqa-homeworks/tree/master/patterns)
-
-<!-- TOC --><a name="--15"></a>
-#### Краткое описание решения
-Проведено заданное тестирование web-интерфейса с использованием класса - генератора тестовых данных и data-класса.
-Проведено тестирование входа в личный кабинет при различных параметрах учетной записи через web-интерфейс с предварительным созданием необходимой учетной записи.
-Подключена система CI (Appveyor).
-
-<!-- TOC --><a name="--16"></a>
-#### Использованный стек
-* JUnit
-* Gradle
-* Lombok
-* Selenide
-* JavaFaker
-* REST-assured
-* Gson
-
-<!-- TOC --><a name="-1-web-httpsgithubcomschastevaqa2-3-ex1-2-webapihttpsgithubcomschastevaqa2-3-ex2"></a>
-#### Репозитории с решением: [1 (web-интерфейс)](https://github.com/schastev/aqa2-3-ex1), [2 (web+API)](https://github.com/schastev/aqa2-3-ex2)
-
-<!-- TOC --><a name="5-selenide"></a>
-### 5. Selenide
-<!-- TOC --><a name="--17"></a>
-#### Краткое описание задачи
-Позитивное тестирование формы заказа доставки карты: проверка соответствия данных, принимаемых полями формы, заданным требованиям. Тестирование работы виджета "календарь" и текстового поля с функцией автозаполнения.
-
-<!-- TOC --><a name="-httpsgithubcomnetology-codeaqa-homeworkstreemasterselenide"></a>
-#### [Полное описание задачи](https://github.com/netology-code/aqa-homeworks/tree/master/selenide)
-<!-- TOC --><a name="--18"></a>
-#### Краткое описание решения
-Проведено позитивное тестирование заданного сценария и функционала поля с автозаполнением и календаря.
-Подключена система CI (Appveyor).
-
-<!-- TOC --><a name="--19"></a>
-#### Использованный стек
-* JUnit
-* Gradle
-* Selenide
-
-<!-- TOC --><a name="-httpsgithubcomschastevaqa2-2"></a>
-#### [Репозиторий с решением](https://github.com/schastev/aqa2-2)
-
-<!-- TOC --><a name="6-selenium-selenide"></a>
-### 6. Тестирование веб-интерфейсов, Selenium и Selenide
-<!-- TOC --><a name="--20"></a>
-#### Краткое описание задачи
-Позитивное тестирование заданного сценария использования формы для заказа банковской карты; негативное тестирование отдельных полей с целью проверки их устойчивости к невалидным данным.
-<!-- TOC --><a name="-httpsgithubcomnetology-codeaqa-homeworkstreemasterweb"></a>
-#### [Полное описание задачи](https://github.com/netology-code/aqa-homeworks/tree/master/web)
-<!-- TOC --><a name="--21"></a>
-#### Краткое описание решения
-Выполнено заданное тестирование сценария и валидации полей с использованием Selenide и Selenium. Подключена система CI (Appveyor).
-
-<!-- TOC --><a name="--22"></a>
-#### Использованный стек
-* JUnit
-* Gradle
-* Selenide
-* Selenium
-
-<!-- TOC --><a name="-1-selenidehttpsgithubcomschastevaqa2-1-selenide-2-seleniumhttpsgithubcomschastevaqa2-1-selenium"></a>
-#### Репозитории с решением: [1 (Selenide)](https://github.com/schastev/aqa2-1-selenide), [2 (Selenium)](https://github.com/schastev/aqa2-1-selenium)
+#### Репозитории с решением: [1 (Page Objects)](https://github.com/schastev/aqa2-4-ex1), [2 (Akita)](https://github.com/schastev/aqa2-4-ex2-bdd)
 
 
 <!-- TOC --><a name="--23"></a>
@@ -231,28 +155,6 @@
 
 <!-- TOC --><a name="-1-docker-composehttpsgithubcomschastevaqa-3-1-ex1-2-httpsgithubcomschastevaqa-3-1-ex2"></a>
 #### Репозитории с решением: [1 (docker-compose)](https://github.com/schastev/aqa-3-1-ex1), [2 (контейнеризация приложения)](https://github.com/schastev/aqa-3-1-ex2)
-
-<!-- TOC --><a name="2-report-portal"></a>
-### 2. Репортинг: Report Portal
-<!-- TOC --><a name="--26"></a>
-#### Краткое описание задачи
-Интегрировать в существующий проект системы генерации отчетов Allure, Report Portal.
-
-<!-- TOC --><a name="-httpsgithubcomnetology-codeaqa-homeworkstreemasterreporting"></a>
-#### [Полное описание задачи](https://github.com/netology-code/aqa-homeworks/tree/master/reporting)
-
-<!-- TOC --><a name="--27"></a>
-#### Краткое описание решения
-В созданный ранее репозиторий добавлена система отчетности Allure путем добавления зависимости в настройки проекта.
-
-<!-- TOC --><a name="--28"></a>
-#### Использованный стек
-* JUnit
-* Gradle
-* Allure
-
-<!-- TOC --><a name="-1-allurehttpsgithubcomschastevaqa4-1-ex1-2-report-portal-wip"></a>
-#### Репозитории с решением: [1 (Allure)](https://github.com/schastev/aqa4-1-ex1), [2 (Report Portal - WIP)]
 
 
 <!-- TOC --><a name="--29"></a>
