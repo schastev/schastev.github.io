@@ -38,11 +38,13 @@
 
 [Полный список фич приложения](https://github.com/schastev/cupCounter/blob/master/features%20(ru).md)
 
-<!-- TOC --><a name="--3"></a>
-#### Использованный стек
+<details>
+ <summary>Использованный стек</summary>
+ 
 * JUnit
 * Gradle
 * JavaFaker
+ </details>
 
 <!-- TOC --><a name="-httpsgithubcomschastevcupcounter"></a>
 #### [Репозиторий с кодом приложения](https://github.com/schastev/cupCounter)
@@ -66,8 +68,9 @@
 Все компоненты тестируемой системы (приложение, БД и заглушка) разворачиваются в контейнерах Docker во время тестирования при помощи testcontainers. Тесты, предполагающие проверку взаимодействия приложения с БД, реализованы как шаблоны тестов, работающие с двумя разными БД (MySQL и PostgreSQL).
 По результатам тестирования и автоматизации подготовлены отчеты с общими рекомендациями и анализом проделанной работы.
 
-<!-- TOC --><a name="--7"></a>
-#### Использованный стек
+<details>
+ <summary>Использованный стек</summary>
+ 
 * JUnit
 * Gradle
 * Lombok
@@ -76,6 +79,8 @@
 * DBUtils
 * Testcontainers
 * Allure
+</details>
+
 
 <!-- TOC --><a name="-httpsgithubcomschastevaqa-diploma"></a>
 #### [Репозиторий с решением](https://github.com/schastev/aqa-diploma)
@@ -97,8 +102,9 @@
 Тестирование фронтенда реализовано при помощи Page Objects. При тестировании API были применены параметризованные тесты.
 Подключена система CI (Appveyor).
 
-<!-- TOC --><a name="--10"></a>
-#### Использованный стек
+<details>
+ <summary>Использованный стек</summary>
+ 
 * JUnit
 * Gradle
 * Lombok
@@ -108,9 +114,11 @@
 * JavaFaker
 * DBUtils
 * Testcontainers
+</details>
+
 
 <!-- TOC --><a name="-1-httpsgithubcomschastevaqa3-2-ex1-2-httpsgithubcomschastevaqa3-2-ex2"></a>
-#### Репозитории с решением: [1 (тестирование входа)](https://github.com/schastev/aqa3-2-ex1-sql), [2 (тестирование входа и переводов)](https://github.com/schastev/aqa3-2-ex2-sql)
+#### Репозитории с решением: [тестирование входа](https://github.com/schastev/aqa3-2-ex1-sql), [тестирование входа и переводов](https://github.com/schastev/aqa3-2-ex2-sql)
 
 <!-- TOC --><a name="3-page-objects-behaviour-driven-development"></a>
 ### 3. Page Objects, Behaviour Driven Development 
@@ -127,16 +135,18 @@
 Реализованы кастомные шаги для заданного тест-кейса при помощи Akita.
 Подключена система CI (Appveyor).
 
-<!-- TOC --><a name="--13"></a>
-#### Использованный стек
+<details>
+ <summary>Использованный стек</summary>
+ 
 * JUnit
 * Gradle
 * Lombok
 * Selenide
 * Akita
+ </details>
 
 <!-- TOC --><a name="-1-page-objectshttpsgithubcomschastevaqa2-4-ex1-2-akitahttpsgithubcomschastevaqa2-4-ex2"></a>
-#### Репозитории с решением: [1 (Page Objects)](https://github.com/schastev/aqa2-4-ex1), [2 (Akita)](https://github.com/schastev/aqa2-4-ex2-bdd)
+#### Репозитории с решением: [Page Objects](https://github.com/schastev/aqa2-4-ex1), [Akita](https://github.com/schastev/aqa2-4-ex2-bdd)
 
 
 <!-- TOC --><a name="--23"></a>
@@ -156,7 +166,7 @@
 Произведена настройка запуска БД в контейнере таким образом, чтобы тестируемое приложение могло с ней взаимодействовать. Образ приложения сконфигурирован в `Dockerfile` и собирается через `docker-compose.yml`. 
 
 <!-- TOC --><a name="-1-docker-composehttpsgithubcomschastevaqa-3-1-ex1-2-httpsgithubcomschastevaqa-3-1-ex2"></a>
-#### Репозитории с решением: [1 (docker-compose)](https://github.com/schastev/aqa-3-1-ex1), [2 (контейнеризация приложения)](https://github.com/schastev/aqa-3-1-ex2)
+#### Репозитории с решением: [docker-compose](https://github.com/schastev/aqa-3-1-ex1), [контейнеризация приложени](https://github.com/schastev/aqa-3-1-ex2)
 
 
 <!-- TOC --><a name="--29"></a>
