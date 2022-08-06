@@ -1,8 +1,11 @@
 <!-- TOC start -->
+- Тестовые задания
+  * Автотестирование
+    + [Автотесты Яндекса на Python с применением паттерна Page Object](#2022-07)
 - Учебные проекты
   * Разработка
     + [Дипломная работа на курсе CS50](#cs50)
-  * Автоматизированное тестирование
+  * Автотестирование
     + [Дипломная работа на курсе "Тестировщик ПО"](#qa-diploma)
     + [SQL](#sql)
     + [Page Objects, Behaviour Driven Development ](#po-bdd)
@@ -11,6 +14,27 @@
   * Артефакты тестирования
     + [Составление плана автоматизации](#test-plan)
 <!-- TOC end -->
+
+
+
+# Тестовые задания
+
+## Автотестирование
+
+<!-- TOC --><a name="2022-07"></a>
+### Автотесты Яндекса на Python с применением паттерна Page Object
+
+#### Краткое описание задачи
+
+Автоматизировать два тест-кейса, используя Python 3, Selenium Webdriver, pytest с применением паттерна PageObject.
+
+#### [Автоматизированные сценарии](https://github.com/schastev/2022_07_test_assignment/blob/main/test-cases.md)
+
+
+#### Использованный стек
+Python3, Selenium, Splinter, Stere, Pytest, Requests, Pillow, Allure
+
+#### [Репозиторий с решением](https://github.com/schastev/2022_07_test_assignment)
 
 
 
@@ -42,7 +66,7 @@ JUnit, Gradle, Room, JavaFaker, Espresso, Mockito, Allure
 #### [Репозиторий с кодом приложения](https://github.com/schastev/cupCounter)
 
 
-## Автоматизированное тестирование
+## Автотестирование
 
 <!-- TOC --><a name="qa-diploma"></a>
 ### Дипломная работа на курсе "Тестировщик ПО"
