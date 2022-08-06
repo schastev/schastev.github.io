@@ -26,7 +26,7 @@
 
 #### Краткое описание задачи
 
-Автоматизировать два тест-кейса, используя Python 3, Selenium Webdriver, pytest с применением паттерна PageObject.
+Автоматизировать два тест-кейса, используя Python 3, Selenium Webdriver, Pytest с применением паттерна Page Object.
 
 #### [Автоматизированные сценарии](https://github.com/schastev/2022_07_test_assignment/blob/main/test-cases.md)
 
